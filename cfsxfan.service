@@ -1,0 +1,10 @@
+[Unit]
+Description=Control CPU Fan on CF-SX1
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/cfsxfan/cfsxfan-unit.sh
+
+[Install]
+WantedBy=multi-user.target
