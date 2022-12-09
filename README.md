@@ -52,7 +52,7 @@ echo '\_SB.PCI0.LPCB.TFN1.SSPD 0x70' | sudo tee /proc/acpi/call
 
 いろんな値を試してみて、値の範囲は`0x00`から`0x70`であることがわかりました。また、`0x00`でもファンは停止せず低速で回転します。
 
-このリポジトリには、これらを利用してCPU温度に応じてファンの回転数を制御するbashスクリプトとSystemdのユニットが含まれています。
+このリポジトリには、これらを利用してCPU温度に応じてファンの回転数を制御するbashスクリプトとsystemdのユニットが含まれています。
 
 ## インストール
 ### acpi_call
@@ -71,7 +71,7 @@ git clone https://github.com/futr/cfsxfan.git
 cd cfsxfan
 ./install.sh
 ```
-bashスクリプトとSystemdのユニットがインストールされ、起動されます。
+bashスクリプトとsystemdのユニットがインストールされ、起動されます。
 
 bashスクリプトは`/usr/local/cfsxfan/`にインストールされます。
 ### 設定
