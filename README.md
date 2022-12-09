@@ -68,7 +68,8 @@ echo "acpi_call" | sudo tee /etc/modules-load.d/acpi_call.conf
 リポジトリをクローンし、`install.sh`を実行します。
 ```
 git clone https://github.com/futr/cfsxfan.git
-./cfsxfan/install.sh
+cd cfsxfan
+./install.sh
 ```
 bashスクリプトとSystemdのユニットがインストールされ、起動されます。
 
