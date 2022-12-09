@@ -46,7 +46,7 @@ Let's note CF-SX1上でLinux(Ubuntu)を利用する際、CPUファンの回転�
 `acpi_call`というモジュールを利用すると、ACPIのメソッドが呼び出せるようなので、`acpi-call-dkms`をインストールしてロードします。
 ```
 sudo apt install acpi-call-dkms
-modprobe acpi_call
+sudo modprobe acpi_call
 ```
 そして、以下を実行するとファンの回転数を制御できました。
 ```
